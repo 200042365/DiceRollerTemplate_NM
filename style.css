@@ -58,6 +58,7 @@ dialog h1 {
     max-width: 666px;
     font-size: 24px;
     margin: auto;
+    flex-direction: column;
 }
 
 .static {

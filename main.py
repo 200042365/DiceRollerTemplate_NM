@@ -21,7 +21,7 @@ def roll_all_dice(event):
     num_dice = int(document.getElementById("num-dice").value)
     rolls = dice.diceroll(faces, num_dice)
     roll_history = document.getElementById("roll-history")
-    roll_history.innerHTML += f"<p>You rolled a {faces} faced dice {num_dice} times: {', '.join(map(str, rolls))}</p>"
+    roll_history.innerHTML += f"<p> The {faces} faced-dice was rolled {num_dice}x: {', '.join(map(str, rolls))}</p>"
 
 def clear_history(event):
     # this finds the div tag with id attribute 'roll-history' and clears whatever is inside
