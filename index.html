@@ -21,18 +21,42 @@
 
 
         <!-- webpage title (shows in browser tab) -->
-        <title>Pyscript Web Dice Roller</title>
+        <title>🎲 200042365_DR 🎲</title>
     </head>
 
     <body>
-        <dialog id="loading"><h1>Loading python environment...</h1></dialog>
-        <!-- Start of your code -->
+        <dialog id="loading">
+            <img src="https://i.giphy.com/5xtDarpTZP1hgRgReLK.webp" alt="Loading" />
+            <h1>...they see me rollin'</h1>
+        </dialog>
 
+            <!-- Page Heading -->
+    <div class="static"> <h2> Are you ready to roll? 🎲 </h2> </div>
 
-
-
-
-
+        <!-- Dice Type Selector -->
+<div class="dice-form">
+     <div class="form-group">
+        <label for="dice-selector">Select dice type:</label>
+        <select id="dice-selector" py-change="select_face_option">
+            <option value="2">2(coin flip)</option>
+            <option value="4">4</option>
+            <option value="6" selected>6</option>
+            <option value="8">8</option>
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="100">100</option>
+        </select>
+    </div>
+    <div class="form-group">
+          <label for="num-dice">How many times do you want to roll:</label>
+          <input type="number" id="num-dice" value="1" min="1">
+    </div>
+</div>
+        <!-- Buttons -->
+        <button type="button" py-click="roll_all_dice">Benny Bennassi & The Biz</button>
+        <button type="button" py-click="clear_history">Clear</button>
+        <!-- area to display results -->
+           <div id="roll-history"></div>
 
 
 
